@@ -9,10 +9,6 @@ ZSH_THEME_GIT_PROMPT_DELETED="%{$fg_bold[red]%}-"
 ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg_bold[magenta]%}>"
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg_bold[yellow]%}#"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg_bold[cyan]%}?"
-# ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}%{$fg[yellow]%}["
-# ZSH_THEME_GIT_PROMPT_SUFFIX=""
-# ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}✗%{$fg[yellow]%}]%{$reset_color%} "
-# ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}✔︎%{$fg[yellow]%}]%{$reset_color%} "
 ZSH_THEME_SVN_PROMPT_PREFIX=$ZSH_THEME_GIT_PROMPT_PREFIX
 ZSH_THEME_SVN_PROMPT_SUFFIX=$ZSH_THEME_GIT_PROMPT_SUFFIX
 ZSH_THEME_SVN_PROMPT_DIRTY=$ZSH_THEME_GIT_PROMPT_DIRTY
@@ -42,4 +38,5 @@ function return_status() {
 }
 
 RPROMPT='$(git_prompt_info)$(git_prompt_status)%{$reset_color%}'
-PROMPT='%2~ $(return_status)%{$fg[yellow]%}➤%b%{$reset_color%} '
+# PROMPT='%2~ $(return_status)%{$fg[green]%}➤%b%{$reset_color%} '
+PROMPT='%2~ $(return_status)%{$fg[green]%}»%b%{$reset_color%} '

@@ -1,5 +1,5 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/.node_modules/bin/:$PATH"
+export npm_config_prefix=~/.node_modules
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sup3r/.oh-my-zsh"
@@ -12,7 +12,7 @@ export ZSH="/home/sup3r/.oh-my-zsh"
 # ZSH_THEME="ys"
 # ZSH_THEME="af-magic"
 # ZSH_THEME="minimal"
- ZSH_THEME="sup3r"
+ZSH_THEME="sup3r"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -126,6 +126,9 @@ alias la='ls -laFh'
 alias topaste='curl -F c=@- https://fars.ee/'
 alias cman='man -M /usr/share/man/zh_CN'
 alias printarg='python -c "print(__import__(\"sys\").argv[1:])"'
+alias myip='curl myip.ipip.net'
+alias open='xdg-open'
+alias clashui='python -m http.server 3333 --directory $HOME/github/clash-dashboard/ >& /dev/null &'
 
 function proxy() {
     export http_proxy="http://127.0.0.1:7890"

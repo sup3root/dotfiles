@@ -1,4 +1,4 @@
-
+set nocompatible
 " Vim with all enhancements
 source $VIMRUNTIME/vimrc_example.vim
 
@@ -70,7 +70,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ }
 
 " set relativenumber
-set nowrap
+"set nowrap
 set noswapfile
 set nobackup
 set noundofile
@@ -79,8 +79,8 @@ set mouse=a
 set clipboard=unnamed   "共享剪贴板(鼠标中键)
 syntax on
 
-set background=light
-"set background=dark
+"set background=light
+set background=dark
 colorscheme PaperColor
 
 "防止中文乱码
@@ -99,7 +99,7 @@ set shiftwidth=4
 set expandtab
 set softtabstop=4
 set showmatch
-"set hlsearch
+set hlsearch
 set wildmenu
 set wildmode=longest:list,full
 set clipboard=unnamed
