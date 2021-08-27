@@ -79,8 +79,8 @@ set mouse=a
 set clipboard=unnamed   "共享剪贴板(鼠标中键)
 syntax on
 
-"set background=light
-set background=dark
+set background=light
+"set background=dark
 colorscheme PaperColor
 
 "防止中文乱码
