@@ -1,4 +1,5 @@
 export PATH="$HOME/.node_modules/bin/:$PATH"
+export GOPATH="$HOME/go"
 export npm_config_prefix=~/.node_modules
 
 # Path to your oh-my-zsh installation.
@@ -133,8 +134,14 @@ alias clashui='python -m http.server 3333 --directory $HOME/github/clash-dashboa
 function proxy() {
     export http_proxy="http://127.0.0.1:7890"
     export https_proxy="http://127.0.0.1:7890"
-    echo 'Proxy is ok.'
+    echo 'Http proxy is ready.'
 }
+
+#function proxys() {
+#    export http_proxy="socks5h://127.0.0.1:7891"
+#    export https_proxy="socks5h://127.0.0.1:7891"
+#    echo 'Socket proxy is ready.'
+#} 
 
 function noproxy() {
     unset http_proxy
