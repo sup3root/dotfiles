@@ -1,0 +1,4 @@
+.config/mpv/watch_later
+vim/*
+!vim/.vimrc
+zsh/custom/plugins
