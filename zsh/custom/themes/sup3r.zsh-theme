@@ -39,4 +39,4 @@ function return_status() {
 
 RPROMPT='$(git_prompt_info)$(git_prompt_status)%{$reset_color%}'
 # PROMPT='%2~ $(return_status)%{$fg[green]%}➤%b%{$reset_color%} '
-PROMPT='%2~ $(return_status)%{$fg[green]%}»%b%{$reset_color%} '
+PROMPT='%2~ $(return_status)%{$fg[yellow]%}»%b%{$reset_color%} '
