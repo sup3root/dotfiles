@@ -119,7 +119,11 @@ inoremap {} {}
 inoremap ( ()<left>
 inoremap (( (
 inoremap () ()
-inoremap <C-L> <esc>f)a
+"inoremap <C-L> <esc>f)a
+inoremap <C-H> <left>
+inoremap <C-J> <down>
+inoremap <C-K> <up>
+inoremap <C-L> <right>
 
 " sudo 保存当前窗口内容
 cnoremap w!! w !sudo tee "%" > /dev/null
